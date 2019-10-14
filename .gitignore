@@ -1,1 +1,3 @@
 db-mysql/
+/src/email-composer/composer
+/src/email-composer/vendor/
