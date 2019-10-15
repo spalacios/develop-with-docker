@@ -1,5 +1,5 @@
 <?php 
-$mysqli = new mysqli('172.21.0.1', 'root', 'password','itec_test', 3306);
+$mysqli = new mysqli('mysql', 'root', 'password','itec_test', 3306);
 
 if ($mysqli->connect_errno) {
     echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
@@ -17,7 +17,7 @@ $query = "UPDATE paises set nombre = '".$pais['nombre']."', iso = '".$pais['iso'
 
 $result = $mysqli->query($query);
 
-if($result) header('Location: listado.php');
+if($result) header('Location: index.php');
 
 ?>
 

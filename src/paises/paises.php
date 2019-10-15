@@ -1,6 +1,6 @@
 <?php 
 
-$mysqli = new mysqli('172.21.0.1', 'root', 'password','itec_test', 3306);
+$mysqli = new mysqli('mysql', 'root', 'password','itec_test', 3306);
 
 if ($mysqli->connect_errno) {
     echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
